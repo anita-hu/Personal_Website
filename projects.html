@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+<head>
+	<meta charset='utf-8' />
+    <title>Anita Hu: Projects</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, height=device-height'>
+
+    <link href='https://fonts.googleapis.com/css?family=Lato|Quicksand' rel='stylesheet'>
+
+    <link rel='stylesheet' href='css/browser_reset.css' type='text/css'/>
+    <link rel='stylesheet' href='css/main.css' type='text/css'/>
+    
+    <style>
+		.intro {
+			background: url('images/projectsbg.jpg') no-repeat 50% 70%;
+			background-size: cover;
+		}
+		
+		.info {
+			background-color: rgba(220,120,70,0.8);
+		}
+		
+		.sidenav a:hover {
+			background-color: rgb(220,120,70);
+		}
+	</style>
+    
+    <script>
+		function openNav() {
+			document.getElementById('mySidenav').style.width = '230px';
+			document.getElementById('content').style.marginLeft = '230px';
+		}
+		
+		function closeNav() {
+			document.getElementById('mySidenav').style.width = '0';
+			document.getElementById('content').style.marginLeft = '0';
+		}
+		
+		function show(x) {
+			document.getElementById('p1').style.display = 'none';
+			document.getElementById('p2').style.display = 'none';
+			document.getElementById('p3').style.display = 'none';
+			document.getElementById('click1').style.opacity = '1';
+			document.getElementById('click2').style.opacity = '1';
+			if (x == '1') {
+				document.getElementById('p1').style.display = 'grid';
+				document.getElementById('click2').style.opacity = '0.5';
+			} else if (x == '2') {
+				document.getElementById('p2').style.display = 'grid';
+				document.getElementById('click1').style.opacity = '0.5';
+			} else if (x == '3') {
+				document.getElementById('p3').style.display = 'grid';
+				document.getElementById('p3').style.marginTop = '20px';
+			} 
+		}
+		
+	</script>
+
+</head>
+
+<body>
+    <div id='dropdown'>
+   		<label for='drop' class='toggle'><img src='images/dropdown.png' alt='menu icon'/></label>
+        <input type='checkbox' id='drop' />
+            <ul class='menu'>
+                <li><a href='index.html'>About</a></li>
+                <li><a href='projects.html'>Projects</a></li>
+                <li><a href='interests.html'>Interests</a></li>
+                <li><a href='#contact'>Contact</a></li>
+            </ul>
+    </div>
+    
+    <nav id='mySidenav' class='sidenav'>
+    	<a href='javascript:void(0)' class='closebtn' onclick='closeNav()'>&times;</a>
+    	<a href='index.html'>About</a>
+        <a href='projects.html'>Projects</a>
+        <a href='interests.html'>Interests</a>
+        <a href='#contact'>Contact</a>
+    </nav>
+    
+    <span onclick='openNav()'><img src='images/dropdown.png' alt='menu icon'/></span>
+    
+    <div id='content'>
+        <div class='intro'>
+            <div class='overlay'>
+                <div class='info'>
+                    <h1>Anita Hu</h1>
+                    <h2 class='title'>Creative, Passionate, Ambitious</h2>
+                </div>
+            </div>
+        </div>
+        
+        <article class='div1'>
+            <h4>Hardware Projects</h4>
+            <div class='click'>
+                <img src='images/bittobinlogo.png' id='click1' onclick='show(1);' alt='smart bin logo'/>
+                <img src='images/battlebot1.jpg' id='click2' onclick='show(2);' alt='image of robot'/>
+            </div>
+            <div class='grid' id='p1' style='display: none;'>
+                <h5>BitToBin</h5>
+                <div class='paragraph'>
+                	<p>BitToBin is a low-cost automatic waste sorter designed to stop waste comtamination in its tracks. Through machine learning and object recognition, BitToBin sorts and deposits waste into compost, recycling and garbage bins as each waste item is placed on the opening platform.</p>
+                	<p><i>Python, Arduino, Clarifai, OpenCV</i></p>
+                     <p><a href='https://devpost.com/software/bittobin'><img src='images/devpost.png' alt='devpost icon'/></a></p>
+                </div>
+                <img src='images/bittobin.jpg' alt='image of smart bin'/>
+            </div>
+            
+            <div class='grid' id='p2' style='display: none;'>
+            	<h5>Battle Bot</h5>
+                <div class='paragraph'>
+                	<p>Battle bot is a robot designed for a 3v3 battle where robots fight to bring blocks from the battle field to their own base. Blocks can placed under the platform or on top for more points.</p>
+                    <p>Battle bot can place blocks on top using a claw and pulley system. The claw moves up and down by turning the DC motor which wounds the track. The two metal poles help guide the claw and restrict sideways motion. The robot used 3 DC motors and 1 servo motor. It was programed through Arduino and controlled using bluetooth with a mobile app.</p>
+                	<p><i>Arduino</i></p>
+                </div>
+                <img src='images/battlebot2.jpg' alt='close up image of robot'/>
+            </div>
+        </article>
+    
+        <article class='div2'>
+            <h4>Software Projects</h4>
+            <div class='click' style='margin-bottom: 0px;'>
+            	<img src='images/newtsnaplogo.png' id='click3' onclick='show(3);' alt='app logo'/>
+            </div>
+            <div id='p3' class='grid' style='display: none;'>
+            	<h5>NewtSnap</h5>
+                <div class='paragraph'>
+                    <p>NewtSnap is a mobile web app that provides an efficient and simple way to take notes. It takes in an image (from a file or take an image) through HTML forms and it outputs a string of text that can be edited or deleted using an OCR API. The notes are saved using local storage so all the notes remain there until you delete them or clear your browser history. The notes can be read out loud using responsivevoice. This allows the user to listen to their notes on the go. It can also allow visually impaired users to view their notes with ease.</p>
+                    <p><i>HTML, CSS, Javascript, jQuery, ocrad.js, responsivevoice.js</i></p>
+                    <p><a href='https://devpost.com/software/newtsnap'><img src='images/devpost.png'/></a></p>
+                </div>
+                <img src='images/newtsnap.png' alt='image of app user interface'/>
+            </div>
+        </article>
+        
+        <footer id='contact'>
+            <h4>Contact</h4>
+            <div class='text'>
+                <h5>Thanks for stopping by!</h5>
+                <p>Find me on: </p>
+                <p><a href='https://github.com/anita-hu'><img src='images/github.png' alt='github icon'/></a><a href='https://devpost.com/anita-hu'><img src='images/devpost.png' alt='devpost icon'/></a></p>
+            </div>
+            <div class='forms'>
+                <form action='mail.php' name='contact' method='post'>
+                    <p>
+                    <input type='text' name='name' id='name' placeholder='Name'/>
+                    </p>
+                    <p>
+                    <input type='email' name='email' id='email' placeholder='Email'/>
+                    </p>
+                    <textarea id='message' name='message' placeholder='Message'></textarea>
+                    <p>
+                    <input type='submit' value='Send' />
+                    <input type='reset' value='Clear' />
+                    </p>
+                </form>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

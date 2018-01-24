@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+<head>
+	<meta charset='utf-8' />
+    <title>Anita Hu: Interests</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, height=device-height'>
+
+    <link href='https://fonts.googleapis.com/css?family=Lato|Quicksand' rel='stylesheet'>
+
+    <link rel='stylesheet' href='css/browser_reset.css' type='text/css'/>
+    <link rel='stylesheet' href='css/main.css' type='text/css'/>
+    
+    <style>
+		.intro {
+			background: url('images/interestsbg.png') no-repeat 50% 0%;
+			background-size: cover;
+		}
+		
+		.info {
+			background-color: rgba(130,50,255,0.8);
+		}
+		
+		.sidenav a:hover {
+			background-color: rgb(130,50,255);
+		}
+		
+		.grid {
+			grid-template-columns: 4fr 3fr;
+		}
+		
+		.grid h4 {
+			grid-column: 1/2;
+			grid-row: 1/2;
+		}
+		
+		.grid img {
+			grid-column: 2/3;
+			grid-row: 2/3;
+			width: 95%;
+			margin-left: 10px;
+		}
+		
+		.grid a img {
+			width: 50px;
+			margin: 0;
+		}
+
+		.paragraph {
+			grid-column: 1/2;
+			grid-row: 2/3;
+		}
+
+	</style>
+    
+    <script>
+		function openNav() {
+			document.getElementById('mySidenav').style.width = '230px';
+			document.getElementById('content').style.marginLeft = '230px';
+			var elems = document.getElementsByClassName('grid');
+			for (var i=0;i<elems.length;i+=1){
+			  elems[i].style.display = 'block';
+			}
+		}
+		
+		function closeNav() {
+			document.getElementById('mySidenav').style.width = '0';
+			document.getElementById('content').style.marginLeft= '0';
+			var elems = document.getElementsByClassName('grid');
+			for (var i=0;i<elems.length;i+=1){
+			  elems[i].style.display = 'grid';
+			}
+		}
+		
+		function show(x) {
+			document.getElementById('click1').style.opacity = '1';
+			document.getElementById('click2').style.opacity = '1';
+			document.getElementById('click3').style.opacity = '1';
+			if (x == '1') {
+				document.getElementById('click2').style.opacity = '0.5';
+				document.getElementById('click3').style.opacity = '0.5';
+			} else if (x == '2') {
+				document.getElementById('click1').style.opacity = '0.5';
+				document.getElementById('click3').style.opacity = '0.5';
+			} else if (x == '3') {
+				document.getElementById('click1').style.opacity = '0.5';
+				document.getElementById('click2').style.opacity = '0.5';
+			} 
+		}
+	</script>
+
+</head>
+
+<body>
+    <div id='dropdown'>
+   		<label for='drop' class='toggle'><img src='images/dropdown.png' alt='menu icon'/></label>
+        <input type='checkbox' id='drop' />
+            <ul class='menu'>
+                <li><a href='index.html'>About</a></li>
+                <li><a href='projects.html'>Projects</a></li>
+                <li><a href='interests.html'>Interests</a></li>
+                <li><a href='#contact'>Contact</a></li>
+            </ul>
+    </div>
+    
+    <nav id='mySidenav' class='sidenav'>
+    	<a href='javascript:void(0)' class='closebtn' onclick='closeNav()' >&times;</a>
+    	<a href='index.html'>About</a>
+        <a href='projects.html'>Projects</a>
+        <a href='interests.html'>Interests</a>
+        <a href='#contact'>Contact</a>
+    </nav>
+    
+    <span onclick='openNav()'><img src='images/dropdown.png' alt='menu icon'/></span>
+    
+    <div id='content'>
+        <div class='intro'>
+            <div class='overlay'>
+                <div class='info'>
+                    <h1>Anita Hu</h1>
+                    <h2 class='title'>Creative, Passionate, Ambitious</h2>
+                </div>
+            </div>
+        </div>
+        
+        <article class='div1'>
+            <h4>Interests</h4>
+            <div id='interest'>
+                <a href='#'><img src='images/mathclublogo.png'  id='click1' onclick='show(1);' alt='math club logo'/></a>
+                <a href='#'><img src='images/sheetmusic.png' id='click2' onclick='show(2);' alt='image of sheetmusic'/></a>
+                <a href='#'><img src='images/musiclogo.jpg' id='click3' onclick='show(3);' alt='music logo'/></a>
+            </div>
+        </article>
+    
+        <article class='div2'>
+        	<div class='grid'>
+            	<h4>Math Club</h4>
+                <div class='paragraph'>
+                	<p>My role as the math club president has enhanced my communication, organization, leadership skills. As a leader, I build positive relationships with members and teacher advisors. I learned to communicate and promote my ideas effectively to both parties, by considering their point of view and interests. Organization is key to creating fun and engaging meetings for everyone. I arranged various challenging problems for each grade and led fun activities to build club spirit. I planned special events such as hosting a guest speaker from Waterloo’s math department.</p>
+                </div>
+                <img src='images/mathclub2.png' alt='math club group picture'/>
+            </div>
+            <div class='grid'>
+                <h4>Piano</h4>
+                <div class='paragraph'>
+                	<p>My passion in music has helped me cope with difficult times by redirecting my focus. Through composing, I express my feelings and unleash my imagination. As of now, I have created 15+ original compositions, all of which are posted on Youtube. With these compositions and more to come, I hope to inspire others and spread positive energy to my listeners.</p>
+                    <p><a href='https://www.youtube.com/channel/UCeCzixf2g3_vsvkhC2zExNQ'><img src='images/youtube.png' alt='youtube icon'/></a></p>
+                </div>
+                <img src='images/piano.png' alt='image of me playing the piano'/>
+            </div>
+            <div class='grid'>
+                <h4>Art</h4>
+                <div class='paragraph'>
+                	<p>I see art as a place of infinite creativity. It is a place where one can turn dreams into reality. As a kid, I have always been fascinated by anime. Their detailed character designs and 2D art style is what inspired me to design my 
+own characters and take on the anime art style. I believe the creative aspect 
+of art can be adapted into all fields. Having a creative mindset will allow me to think outside the box and be innovative when solving problems. Art will definitely be an asset in my future such as being able to put ideas into a physical drawing or being able to create visually appealing designs.</p>
+                </div>
+                <img src='images/art.jpg' alt='world hunger art poster'/>
+            </div>
+        </article>
+        
+        <footer id='contact'>
+            <h4>Contact</h4>
+            <div class='text'>
+                <h5>Thanks for stopping by!</h5>
+                <p>Find me on: </p>
+                <p><a href='https://github.com/anita-hu'><img src='images/github.png' alt='github icon'/></a><a href='https://devpost.com/anita-hu'><img src='images/devpost.png' alt='devpost icon'/></a></p>
+            </div>
+            <div class='forms'>
+                <form action='mail.php' name='contact' method='post'>
+                    <p>
+                    <input type='text' name='name' id='name' placeholder='Name'/>
+                    </p>
+                    <p>
+                    <input type='email' name='email' id='email' placeholder='Email'/>
+                    </p>
+                    <textarea id='message' name='message' placeholder='Message'></textarea>
+                    <p>
+                    <input type='submit' value='Send' />
+                    <input type='reset' value='Clear' />
+                    </p>
+                </form>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
