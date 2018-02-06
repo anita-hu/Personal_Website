@@ -204,6 +204,10 @@ p a:hover, p a:active {
 	width: 90%;
 }
 
+.click p {
+	display: block;
+}
+
 .grid {
 	margin-bottom: 10px;
 }

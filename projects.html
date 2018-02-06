@@ -10,33 +10,33 @@
 
     <link rel='stylesheet' href='css/browser_reset.css' type='text/css'/>
     <link rel='stylesheet' href='css/main.css' type='text/css'/>
-    
+
     <style>
 		.intro {
 			background: url('images/projectsbg.jpg') no-repeat 50% 70%;
 			background-size: cover;
 		}
-		
+
 		.info {
 			background-color: rgba(220,120,70,0.8);
 		}
-		
+
 		.sidenav a:hover {
 			background-color: rgb(220,120,70);
 		}
 	</style>
-    
+
     <script>
 		function openNav() {
 			document.getElementById('mySidenav').style.width = '230px';
 			document.getElementById('content').style.marginLeft = '230px';
 		}
-		
+
 		function closeNav() {
 			document.getElementById('mySidenav').style.width = '0';
 			document.getElementById('content').style.marginLeft = '0';
 		}
-		
+
 		function show(x) {
 			document.getElementById('p1').style.display = 'none';
 			document.getElementById('p2').style.display = 'none';
@@ -52,9 +52,24 @@
 			} else if (x == '3') {
 				document.getElementById('p3').style.display = 'grid';
 				document.getElementById('p3').style.marginTop = '20px';
-			} 
+			}
 		}
-		
+
+		function onHover(x) {
+			if (x == '1') {
+				document.getElementById('click2').style.opacity = '0.5';
+			} else if (x == '2') {
+				document.getElementById('click1').style.opacity = '0.5';
+			}
+		}
+
+		function offHover(x) {
+			if (x == '1') {
+				document.getElementById('click2').style.opacity = '1';
+			} else if (x == '2') {
+				document.getElementById('click1').style.opacity = '1';
+			}
+		}
 	</script>
 
 </head>
@@ -70,7 +85,7 @@
                 <li><a href='#contact'>Contact</a></li>
             </ul>
     </div>
-    
+
     <nav id='mySidenav' class='sidenav'>
     	<a href='javascript:void(0)' class='closebtn' onclick='closeNav()'>&times;</a>
     	<a href='index.html'>About</a>
@@ -78,9 +93,9 @@
         <a href='interests.html'>Interests</a>
         <a href='#contact'>Contact</a>
     </nav>
-    
+
     <span onclick='openNav()'><img src='images/dropdown.png' alt='menu icon'/></span>
-    
+
     <div id='content'>
         <div class='intro'>
             <div class='overlay'>
@@ -90,13 +105,14 @@
                 </div>
             </div>
         </div>
-        
+
         <article class='div1'>
             <h4>Hardware Projects</h4>
             <div class='click'>
-                <img src='images/bittobinlogo.png' id='click1' onclick='show(1);' alt='smart bin logo'/>
-                <img src='images/battlebot1.jpg' id='click2' onclick='show(2);' alt='image of robot'/>
+                <img src='images/bittobinlogo.png' id='click1' onclick='show(1);' onmouseover='onHover(1);' onmouseout='offHover(1);' alt='smart bin logo'/>
+                <img src='images/battlebot1.jpg' id='click2' onclick='show(2);' onmouseover='onHover(2);' onmouseout='offHover(2);' alt='image of robot'/>
             </div>
+			<p><i>Click on images to learn more!</i></p>
             <div class='grid' id='p1' style='display: none;'>
                 <h5>BitToBin</h5>
                 <div class='paragraph'>
@@ -106,7 +122,7 @@
                 </div>
                 <img src='images/bittobin.jpg' alt='image of smart bin'/>
             </div>
-            
+
             <div class='grid' id='p2' style='display: none;'>
             	<h5>Battle Bot</h5>
                 <div class='paragraph'>
@@ -117,12 +133,13 @@
                 <img src='images/battlebot2.jpg' alt='close up image of robot'/>
             </div>
         </article>
-    
+
         <article class='div2'>
             <h4>Software Projects</h4>
             <div class='click' style='margin-bottom: 0px;'>
-            	<img src='images/newtsnaplogo.png' id='click3' onclick='show(3);' alt='app logo'/>
+            	<img src='images/newtsnaplogo.png' id='click3' onclick='show(3);' onmouseover='onHover(3);' onmouseout='offHover(3);' alt='app logo'/>
             </div>
+			<p style='margin-top: 20px;'><i>Click on images to learn more!</i></p>
             <div id='p3' class='grid' style='display: none;'>
             	<h5>NewtSnap</h5>
                 <div class='paragraph'>
@@ -133,7 +150,7 @@
                 <img src='images/newtsnap.png' alt='image of app user interface'/>
             </div>
         </article>
-        
+
         <footer id='contact'>
             <h4>Contact</h4>
             <div class='text'>
