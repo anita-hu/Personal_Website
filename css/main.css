@@ -158,7 +158,7 @@ i {
 }
 
 article {
-	padding: 30px;
+	padding: 35px;
 }
 
 p a:link, p a:visited {
@@ -196,16 +196,20 @@ p a:hover, p a:active {
 	background-color: #666;
 }
 
-.click {
-	margin-bottom: 10px;
-}
-
-.click img {
-	width: 90%;
-}
-
-.click p {
-	display: block;
+.div3 {
+	background-color: #444;
+	clip-path: polygon(
+	0 0,
+	100% 6vw,
+	100% 100%,
+	0 100%
+	);
+	-webkit-clip-path: polygon(
+	0 0,
+	100% 6vw,
+	100% 100%,
+	0 100%
+	);
 }
 
 .grid {
@@ -214,10 +218,6 @@ p a:hover, p a:active {
 
 .grid img {
 	width: 100%;
-}
-
-#interest img {
-	width: 90%;
 }
 
 .grid a {
@@ -233,22 +233,18 @@ p a:hover, p a:active {
 	width: 60px;
 }
 
+#p1, #p2 {
+	margin-bottom: 15px;
+}
+
+a img {
+	width: 60px;
+}
+
 #contact {
-	background-color: #444;
+	background: linear-gradient(#444, #666);
 	font-size: 2rem;
 	padding: 30px;
-	clip-path: polygon(
-	0 0,
-	100% 6vw,
-	100% 100%,
-	0 100%
-	);
-	-webkit-clip-path: polygon(
-	0 0,
-	100% 6vw,
-	100% 100%,
-	0 100%
-	);
 }
 
 #contact img {
@@ -309,10 +305,10 @@ textarea{
 }
 
 input[type=submit] {
-	color: #999;
-	margin: 15px 25px 0px 15px;
-	background-color: #444;
-	border: 3px solid #AAA;
+	color: #BBB;
+	margin: 15px 35px 0px 15px;
+	background-color: transparent;
+	border: 3px solid #BBB;
 	padding: 8px 14px;
 }
 
@@ -322,10 +318,10 @@ input[type=submit]:hover {
 }
 
 input[type=reset] {
-	color: #999;
-	margin: 15px 15px 0px 25px;
-	background-color: #444;
-	border: 3px solid #AAA;
+	color: #BBB;
+	margin: 15px 15px 0px 35px;
+	background-color: transparent;
+	border: 3px solid #BBB;
 	padding: 8px 14px;
 }
 
@@ -334,40 +330,15 @@ input[type=reset]:hover {
 	border: 3px solid #F55;
 }
 
-@media screen and (min-width: 580px) {
-	.click {
-		height: 28vw;
-		margin-bottom: 25px;
-		overflow: hidden;
-	}
+footer {
+	background-color: #666;
+	padding-left: 30px;
+	padding-top: 5px;
+}
 
-	.click img {
-		display: inline-block;
-		width: 32vw;
-		height: 100%;
-		transition: opacity ease-in-out .5s;
-	}
-
-	#interest {
-		height: 20vw;
-		margin-bottom: 30px;
-		overflow: hidden;
-	}
-
-	#interest img {
-		display: inline-block;
-		width: 20vw;
-		height: 100%;
-		transition: opacity ease-in-out .5s;
-	}
-
-	input[type=submit] {
-		margin: 15px 30px 0px 15px;
-	}
-
-	input[type=reset] {
-		margin: 15px 15px 0px 30px;
-	}
+footer p {
+	font-size: 1.5rem;
+	margin-bottom: 5px;
 }
 
 @media screen and (min-width: 750px) {
@@ -434,7 +405,7 @@ input[type=reset]:hover {
 
 	.grid {
 		display: grid;
-		grid-template-columns: 3fr 4fr;
+		grid-template-columns: 300px 4fr;
 		grid-template-rows: auto;
 	}
 
@@ -478,8 +449,7 @@ input[type=reset]:hover {
 	}
 
 	.title {
-		border-top: none;
-		border-bottom: solid 1px #FFF;
+		border-top: solid 1px #FFF;
 		width: 300px;
 	}
 

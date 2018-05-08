@@ -3,35 +3,50 @@
 <html lang='en'>
 <head>
 	<meta charset='utf-8' />
-    <title>Anita Hu: About</title>
+    <title>Anita Hu | </title>
     <meta name='viewport' content='width=device-width, initial-scale=1.0, height=device-height'>
 
     <link href='https://fonts.googleapis.com/css?family=Lato|Quicksand' rel='stylesheet'>
 
     <link rel='stylesheet' href='css/browser_reset.css' type='text/css'/>
     <link rel='stylesheet' href='css/main.css' type='text/css'/>
-    
+
     <style>
 		.intro {
 			background: url('images/aboutbg.jpg') no-repeat 65% 50%;
 			background-size: cover;
 		}
-		
+
 		.info {
 			background-color: rgba(150,200,255,0.8);
 		}
-		
+
 		.sidenav a:hover {
 			background-color: rgb(150,200,255);
 		}
-		
-		td:first-child {
+
+		#exp td:first-child {
 			font-weight: bold;
 			padding-right: 20px;
 			width: 30%;
 		}
+
+		#skills {
+			grid-column: 2/3;
+			margin-bottom: 15px;
+			line-height:100%;
+		}
+
+		progress {
+			margin-left: 20px;
+			width: 70px;
+		}
+
+		#skills td:nth-child(2) {
+			padding-right: 50px;
+		}
 	</style>
-    
+
     <script>
 		function openNav() {
 			document.getElementById('mySidenav').style.width = '230px';
@@ -39,7 +54,7 @@
 			document.getElementById('about').style.gridTemplateColumns = '1fr 2fr';
 			document.getElementById('exp').style.gridTemplateColumns = '1fr 2fr';
 		}
-		
+
 		function closeNav() {
 			document.getElementById('mySidenav').style.width = '0';
 			document.getElementById('content').style.marginLeft= '0';
@@ -55,23 +70,23 @@
    		<label for='drop' class='toggle'><img src='images/dropdown.png' alt='menu icon'/></label>
         <input type='checkbox' id='drop' />
             <ul class='menu'>
-                <li><a href='index.html'>About</a></li>
-                <li><a href='projects.html'>Projects</a></li>
-                <li><a href='interests.html'>Interests</a></li>
+                <li><a href='#about'>About</a></li>
+                <li><a href='#exp'>Experience</a></li>
+                <li><a href='#project'>Projects</a></li>
                 <li><a href='#contact'>Contact</a></li>
             </ul>
     </div>
-    
+
     <nav id='mySidenav' class='sidenav'>
     	<a href='javascript:void(0)' class='closebtn' onclick='closeNav()'>&times;</a>
-    	<a href='index.html'>About</a>
-        <a href='projects.html'>Projects</a>
-        <a href='interests.html'>Interests</a>
+    	<a href='#about'>About</a>
+        <a href='#exp'>Experience</a>
+        <a href='#project'>Projects</a>
         <a href='#contact'>Contact</a>
     </nav>
-    
+
     <span onclick='openNav()'><img src='images/dropdown.png' alt='menu icon'/></span>
-    
+
     <div id='content'>
         <div class='intro'>
             <div class='overlay'>
@@ -81,27 +96,117 @@
                 </div>
             </div>
         </div>
-        
+
         <article class='div1' id='about'>
             <h3 class='left'>About</h3>
-            <p>Hi, nice to meet you! My name is Anita Hu.
-    I am proficient in <b>HTML</b>, <b>CSS</b>, <b>Javascript</b> and <b>Python</b>. 
-    You can find out more <a href='index.html'>about me</a>, learn more my <a href='projects.html'>projects</a>, and read about my <a href='interests.html'>interests</a>!</p>
+            <p>Hi, nice to meet you! My name is Anita Hu. I am a Grade 12 student and a hackathon enthusiast.
+    You can check out my <a href='#project'>projects</a>, and read about my <a href='#interest'>interests</a>!</p>
             <p>I am always up for a challenge and looking forward to my next internship opportunity! Feel free to <a href='#contact'>contact me</a> and say hi!</p>
-            <p>I am currently a Grade 12 student at Sacred Heart Catholic High School planing to study Mechatronics Engineering. Engineering has struck me as a field of immense problem solving and creativity. I love the idea of innovation. From composing music to creating tech projects, I enjoy the creative process of sewing ideas into a final product. The world is headed towards a future reliant on computers and artificial intelligence. I want to be on the front lines of innovation, contributing my ideas and knowledge. Pursuing a degree in Mechatronics Engineering will be key to achieving this goal.</p>
+			<h4 class='left'>Skills</h4>
+			<div id='skills'>
+				<table>
+					<tr>
+						<td colspan='2'>
+							<h5>Front-end</h5>
+						</td>
+						<td colspan='2'>
+							<h5>Libraries and tools</h5>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p>HTML 5</p>
+						</td>
+						<td>
+							<progress value='100' max='100'></progress>
+						</td>
+						<td>
+							<p>OpenCV</p>
+						</td>
+						<td>
+							<progress value='60' max='100'></progress>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p>CSS 3</p>
+						</td>
+						<td>
+							<progress value='90' max='100'></progress>
+						</td>
+						<td>
+							<p>Flask</p>
+						</td>
+						<td>
+							<progress value='45' max='100'></progress>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p>JavaScript</p>
+						</td>
+						<td>
+							<progress value='80' max='100'></progress>
+						</td>
+						<td>
+							<p>AutoCAD</p>
+						</td>
+						<td>
+							<progress value='70' max='100'></progress>
+						</td>
+					</tr>
+					<tr>
+						<td>
+
+						</td>
+						<td>
+
+						</td>
+						<td>
+							<p>Illustrator</p>
+						</td>
+						<td>
+							<progress value='95' max='100'></progress>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h5>Back-end</h5>
+						</td>
+						<td>
+
+						</td>
+						<td>
+							<p>Photoshop</p>
+						</td>
+						<td>
+							<progress value='85' max='100'></progress>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p>Python 3</p>
+						</td>
+						<td>
+							<progress value='80' max='100'></progress>
+						</td>
+					</tr>
+				</table>
+
+			</div>
         </article>
-    
+
         <article class='div2' id='exp'>
             <h4>Experience</h4>
             <div style='grid-column: 2/3; margin-bottom: 15px;'>
                 <h5>Camp Counsellor</h5>
                 <p style='margin-bottom: 10px;'><i>Town of Newmarket</i></p>
                 <p>I planned and led educational, social, and athletic activities for children. I supervised all activities and swimming sections and provided first-aid when needed.</p>
-                
+
                 <h5>Peer Tutoring</h5>
                 <p style='margin-bottom: 10px;'><i>Sacred Heart C.H.S.</i></p>
                 <p>I tutor students from Grades 9 to 12 in Science and Math courses. I assist students with homework, projects and test preparation. I provide better understanding of concepts by showing the reason and logic behind them.</p>
-                
+
                 <h5>Engineering Club Mentor</h5>
                 <p style='margin-bottom: 10px;'><i>Sacred Heart C.H.S.</i></p>
                 <p>I work together with other members to assemble a 3D printer. I lead the members in the learning and exploration of computer-aided design (AutoCAD).</p>
@@ -118,8 +223,46 @@
                 </tr>
             </table>
         </article>
-        
-        <footer id='contact'>
+		<article class='div3' id='project'>
+			<h4>Projects</h4>
+			<div id='p1' class='grid'>
+				<h5>BitToBin</h5>
+				<div class='paragraph'>
+                	<p>BitToBin is a low-cost automatic waste sorter designed to stop waste comtamination in its tracks. Through machine learning and object recognition, BitToBin sorts and deposits waste into compost, recycling and garbage bins as each waste item is placed on the opening platform.</p>
+                	<p><i>Python, Arduino, Clarifai, OpenCV</i></p>
+                     <p><a href='https://devpost.com/software/bittobin'><img src='images/devpost.png' alt='devpost icon'/></a></p>
+                </div>
+                <img src='images/bittobin.jpg' alt='image of smart bin'/>
+			</div>
+			<div id='p2'>
+				<h5>Presentation Buddy</h5>
+				<p>Presentation Buddy is a website designed to give real-time feedback to the user's presentation. It contains a live video stream with a smile meter that fluctuates according to the user's facial expression, a timer and presentation tips that refresh every 5 seconds.</p>
+				<p><i>Flask, OpenCV, Python, HTML, CSS, Javascript</i></p>
+				<p><a href='https://devpost.com/software/presentationbuddy'><img src='images/devpost.png' alt='devpost icon'/></a></p>
+				<img src='images/presentation.png' alt='image of app user interface' width='100%'/>
+			</div>
+			<div id='p3' class='grid'>
+				<h5>NewtSnap</h5>
+                <div class='paragraph'>
+                    <p>NewtSnap is a mobile web app that provides an efficient and simple way to take notes. It takes in an image (from a file or take an image) through HTML forms and it outputs a string of text that can be edited or deleted using an OCR API. The notes are saved using local storage so all the notes remain there until you delete them or clear your browser history. The notes can be read out loud using responsivevoice. This allows the user to listen to their notes on the go. It can also allow visually impaired users to view their notes with ease.</p>
+                    <p><i>HTML, CSS, Javascript, jQuery, ocrad.js, responsivevoice.js</i></p>
+                    <p><a href='https://devpost.com/software/newtsnap'><img src='images/devpost.png'/></a></p>
+                </div>
+                <img src='images/newtsnap.png' alt='image of app user interface'/>
+				<div id='p4' class='grid'>
+	            	<h5>Battle Bot</h5>
+	                <div class='paragraph'>
+	                	<p>Battle bot is a robot designed for a 3v3 battle where robots fight to bring blocks from the battle field to their own base. Blocks can placed under the platform or on top for more points.</p>
+	                    <p>Battle bot can place blocks on top using a claw and pulley system. The claw moves up and down by turning the DC motor which wounds the track. The two metal poles help guide the claw and restrict sideways motion. The robot used 3 DC motors and 1 servo motor. It was programed through Arduino and controlled using bluetooth with a mobile app.</p>
+	                	<p><i>Arduino</i></p>
+	                </div>
+	                <img src='images/battlebot2.jpg' alt='close up image of robot'/>
+	            </div>
+			</div>
+
+		</article>
+
+        <article id='contact'>
             <h4>Contact</h4>
             <div class='text'>
                 <h5>Thanks for stopping by!</h5>
@@ -141,7 +284,10 @@
                     </p>
                 </form>
             </div>
-        </footer>
+        </article>
+		<footer>
+			<p>Copyright &copy; 2018 Anita Hu</p>
+		</footer>
     </div>
 </body>
 
