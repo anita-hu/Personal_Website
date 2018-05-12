@@ -11,96 +11,30 @@
     <link rel='stylesheet' href='css/browser_reset.css' type='text/css'/>
     <link rel='stylesheet' href='css/main.css' type='text/css'/>
 
-    <style>
-		.intro {
-			background: url('images/aboutbg.jpg') no-repeat 65% 50%;
-			background-size: cover;
-		}
-
-		.info {
-			background-color: rgba(150,200,255,0.8);
-		}
-
-		.sidenav a:hover {
-			background-color: rgb(150,200,255);
-		}
-
-		#exp td:first-child {
-			font-weight: bold;
-			padding-right: 20px;
-			width: 30%;
-		}
-
-		#skills {
-			grid-column: 2/3;
-			margin-bottom: 15px;
-			line-height:100%;
-		}
-
-		progress {
-			margin-left: 20px;
-			width: 70px;
-		}
-
-		#skills td:nth-child(2) {
-			padding-right: 50px;
-		}
-	</style>
-
-    <script>
-		function openNav() {
-			document.getElementById('mySidenav').style.width = '230px';
-			document.getElementById('content').style.marginLeft = '230px';
-			document.getElementById('about').style.gridTemplateColumns = '1fr 2fr';
-			document.getElementById('exp').style.gridTemplateColumns = '1fr 2fr';
-		}
-
-		function closeNav() {
-			document.getElementById('mySidenav').style.width = '0';
-			document.getElementById('content').style.marginLeft= '0';
-			document.getElementById('about').style.gridTemplateColumns = '1fr 3fr';
-			document.getElementById('exp').style.gridTemplateColumns = '1fr 3fr';
-		}
-	</script>
-
 </head>
 
 <body>
-    <div id='dropdown'>
-   		<label for='drop' class='toggle'><img src='images/dropdown.png' alt='menu icon'/></label>
-        <input type='checkbox' id='drop' />
-            <ul class='menu'>
-                <li><a href='#about'>About</a></li>
-                <li><a href='#exp'>Experience</a></li>
-                <li><a href='#project'>Projects</a></li>
-                <li><a href='#contact'>Contact</a></li>
-            </ul>
+    <div id='nav'>
+        <ul class='menu'>
+            <li><a href='#content'>Home</a></li>
+            <li><a href='#exp'>Experience</a></li>
+            <li><a href='#project'>Projects</a></li>
+            <li><a href='#contact'>Contact</a></li>
+        </ul>
     </div>
 
-    <nav id='mySidenav' class='sidenav'>
-    	<a href='javascript:void(0)' class='closebtn' onclick='closeNav()'>&times;</a>
-    	<a href='#about'>About</a>
-        <a href='#exp'>Experience</a>
-        <a href='#project'>Projects</a>
-        <a href='#contact'>Contact</a>
-    </nav>
-
-    <span onclick='openNav()'><img src='images/dropdown.png' alt='menu icon'/></span>
-
     <div id='content'>
-        <div class='intro'>
-            <div class='overlay'>
-                <div class='info'>
-                    <h1>Anita Hu</h1>
-                    <h2 class='title'>Creative, Passionate, Ambitious</h2>
-                </div>
-            </div>
-        </div>
-
+		<div class='intro'>
+			<div class='info'>
+				<h1>Anita Hu</h1>
+				<h2 class='title'>Creative, Passionate, Ambitious</h2>
+				<p><a href='https://github.com/anita-hu'><img src='images/githubw.png' alt='github icon'/></a><a href='https://devpost.com/anita-hu'><img src='images/devpostw.png' alt='devpost icon'/></a></p>
+				<div class="diamond"></div>
+			</div>
+		</div>
         <article class='div1' id='about'>
             <h3 class='left'>About</h3>
-            <p>Hi, nice to meet you! My name is Anita Hu. I am a Grade 12 student and a hackathon enthusiast.
-    You can check out my <a href='#project'>projects</a>, and read about my <a href='#interest'>interests</a>!</p>
+            <p>Hi, nice to meet you! My name is Anita Hu. I am a Grade 12 student studying at Sacred Heart Catholic High School. Take a look at my <a href='#project'>projects</a> here! I try my best to keep it up to date.</p>
             <p>I am always up for a challenge and looking forward to my next internship opportunity! Feel free to <a href='#contact'>contact me</a> and say hi!</p>
 			<h4 class='left'>Skills</h4>
 			<div id='skills'>
@@ -138,7 +72,7 @@
 							<p>Flask</p>
 						</td>
 						<td>
-							<progress value='35' max='100'></progress>
+							<progress value='30' max='100'></progress>
 						</td>
 					</tr>
 					<tr>
