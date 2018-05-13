@@ -101,7 +101,7 @@ i {
 
 .info {
 	padding-top: 30vh;
-	margin-left: 55px;
+	margin-left: 30px;
 }
 
 .info a img {
@@ -372,6 +372,11 @@ footer p {
 	input[type=reset] {
 		color: #BBB;
 		margin: 15px 15px 0px 35px;
+	}
+
+	.info {
+		margin-left: 55px;
+	}
 }
 
 @media screen and (min-width: 600px) {
