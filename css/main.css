@@ -1,5 +1,6 @@
-html {
+html, body {
 	font-size: 10px;
+	width: 100%;
 	overflow-x: hidden;
 }
 
@@ -66,14 +67,15 @@ i {
 	background-color: #19beff;
 	z-index: 999;
 	text-align: left;
-	overflow: hidden;
+	overflow-x: hidden;
 }
 
 #nav ul li {
 	display: inline-block;
 	background-color: transparent;
-	padding: 11px 18px;
+	padding: 11px 6px;
 	transition: border .15s ease-in-out;
+	text-align: center;
 }
 
 #nav a {
@@ -91,13 +93,13 @@ i {
 }
 
 .intro {
-	overflow: hidden;
 	background: #19beff;
 	height: 100vh;
+	overflow: hidden;
 	width: 100%;
 }
 
-.info{
+.info {
 	padding-top: 30vh;
 	margin-left: 55px;
 }
@@ -303,7 +305,7 @@ textarea{
 
 input[type=submit] {
 	color: #BBB;
-	margin: 15px 35px 0px 15px;
+	margin: 15px 15px 0px 15px;
 	background-color: transparent;
 	border: 3px solid #BBB;
 	padding: 8px 14px;
@@ -316,7 +318,7 @@ input[type=submit]:hover {
 
 input[type=reset] {
 	color: #BBB;
-	margin: 15px 15px 0px 35px;
+	margin: 15px 15px 0px 15px;
 	background-color: transparent;
 	border: 3px solid #BBB;
 	padding: 8px 14px;
@@ -338,14 +340,38 @@ footer p {
 	margin-bottom: 5px;
 }
 
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 350px) {
 	#nav {
 		text-align: right;
 	}
 
 	#nav ul li {
+		padding: 11px 10px;
+	}
+
+	input[type=submit] {
+		color: #BBB;
+		margin: 15px 25px 0px 15px;
+	}
+
+	input[type=reset] {
+		color: #BBB;
+		margin: 15px 15px 0px 25px;
+}
+
+@media screen and (min-width: 430px) {
+	#nav ul li {
 		padding: 11px 20px;
 	}
+
+	input[type=submit] {
+		color: #BBB;
+		margin: 15px 35px 0px 15px;
+	}
+
+	input[type=reset] {
+		color: #BBB;
+		margin: 15px 15px 0px 35px;
 }
 
 @media screen and (min-width: 600px) {
