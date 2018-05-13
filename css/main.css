@@ -66,6 +66,7 @@ i {
 	background-color: #19beff;
 	z-index: 999;
 	text-align: right;
+	overflow: hidden;
 }
 
 #nav ul li {
