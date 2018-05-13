@@ -65,14 +65,14 @@ i {
 	display: block;
 	background-color: #19beff;
 	z-index: 999;
-	text-align: right;
+	text-align: left;
 	overflow: hidden;
 }
 
 #nav ul li {
 	display: inline-block;
 	background-color: transparent;
-	padding: 11px 20px;
+	padding: 11px 18px;
 	transition: border .15s ease-in-out;
 }
 
@@ -336,6 +336,16 @@ footer {
 footer p {
 	font-size: 1.5rem;
 	margin-bottom: 5px;
+}
+
+@media screen and (min-width: 450px) {
+	#nav {
+		text-align: right;
+	}
+
+	#nav ul li {
+		padding: 11px 20px;
+	}
 }
 
 @media screen and (min-width: 600px) {
