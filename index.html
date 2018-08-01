@@ -17,7 +17,7 @@
     <div id='content'>
 		<div id='nav'>
 	        <ul>
-	            <li><a href='#content'>Home</a></li>
+	            <li><a href='#content'>About</a></li>
 	            <li><a href='#exp'>Experience</a></li>
 	            <li><a href='#project'>Projects</a></li>
 	            <li><a href='#contact'>Contact</a></li>
@@ -26,98 +26,97 @@
 		<div class='intro'>
 			<div class='info'>
 				<h1>Anita Hu</h1>
-				<h2 class='title'>Creative, Passionate, Ambitious</h2>
+				<h2 class='title'>Mechatronics Engineering @ UWaterloo</h2>
 				<p><a href='https://github.com/anita-hu'><img src='images/githubw.png' alt='github icon'/></a><a href='https://devpost.com/anita-hu'><img src='images/devpostw.png' alt='devpost icon'/></a></p>
 				<div class="diamond"></div>
 			</div>
 		</div>
         <article class='div1' id='about'>
             <h3 class='left'>About</h3>
-            <p>Hi, nice to meet you! My name is Anita Hu. I am a Grade 12 student studying at Sacred Heart Catholic High School. I enjoy taking part in hackathons, where I can learn new skills and brainstorm innovative ideas in a team setting. Take a look at my <a href='#project'>projects</a> here! I try my best to keep them up to date.</p>
-            <p>I am always up for a challenge and looking forward to my next internship opportunity! Feel free to <a href='#contact'>contact me</a> and say hi!</p>
+            <p>Hi, nice to meet you! My name is Anita Hu. I am a 1A  Mechatronics Engineering student at the University of Waterloo. I enjoy taking part in hackathons, where I can learn new skills and brainstorm innovative ideas in a team setting. Take a look at my <a href='#project'>projects</a> here! I try my best to keep them up to date.</p>
+            <p>I am always up for a challenge and looking forward to my next internship opportunity! Feel free to check out my <a href='resume.pdf'>resume</a> and <a href='#contact'>contact me</a> and say hi!</p>
 			<h4 class='left'>Skills</h4>
 			<div id='skills'>
 				<table>
 					<tr>
-						<td colspan='2'>
+						<td>
 							<h5>Languages</h5>
 						</td>
-						<td colspan='2'>
-							<h5>Libraries and Tools</h5>
+						<td>
+							<h5>Technologies</h5>
 						</td>
 					</tr>
 					<tr>
 						<td>
-							<p>Python</p>
+							<div class='progress'>
+							    <span class='skill'>Python</span>
+							    <div class='bar' style='width: 80%'></div>
+							</div>
 						</td>
 						<td>
-							<progress value='80' max='100'></progress>
-						</td>
-						<td>
-							<p>OpenCV</p>
-						</td>
-						<td>
-							<progress value='45' max='100'></progress>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<p>Javascript</p>
-						</td>
-						<td>
-							<progress value='80' max='100'></progress>
-						</td>
-						<td>
-							<p>Git</p>
-						</td>
-						<td>
-							<progress value='50' max='100'></progress>
+							<div class='progress'>
+							    <span class='skill'>OpenCV</span>
+							    <div class='bar' style='width: 55%'></div>
+							</div>
 						</td>
 					</tr>
 					<tr>
 						<td>
-							<p>HTML</p>
+							<div class='progress'>
+							    <span class='skill'>JavaScript</span>
+							    <div class='bar' style='width: 75%'></div>
+							</div>
 						</td>
 						<td>
-							<progress value='100' max='100'></progress>
-						</td>
-						<td>
-							<p>AutoCAD</p>
-						</td>
-						<td>
-							<progress value='60' max='100'></progress>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<p>CSS</p>
-						</td>
-						<td>
-							<progress value='90' max='100'></progress>
-						</td>
-						<td>
-							<p>Illustrator</p>
-						</td>
-						<td>
-							<progress value='95' max='100'></progress>
+							<div class='progress'>
+							    <span class='skill'>Git</span>
+							    <div class='bar' style='width: 50%'></div>
+							</div>
 						</td>
 					</tr>
 					<tr>
 						<td>
-
+							<div class='progress'>
+							    <span class='skill'>HTML</span>
+							    <div class='bar' style='width: 100%; border-radius: 25px;'></div>
+							</div>
 						</td>
 						<td>
-							
+							<div class='progress'>
+							    <span class='skill'>AutoCAD</span>
+							    <div class='bar' style='width: 50%'></div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class='progress'>
+							    <span class='skill'>CSS</span>
+							    <div class='bar' style='width: 90%'></div>
+							</div>
 						</td>
 						<td>
-							<p>Photoshop</p>
+							<div class='progress'>
+							    <span class='skill'>Illustrator</span>
+							    <div class='bar' style='width: 90%'></div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class='progress'>
+							    <span class='skill'>Arduino</span>
+							    <div class='bar' style='width: 65%'></div>
+							</div>
 						</td>
 						<td>
-							<progress value='85' max='100'></progress>
+							<div class='progress'>
+							    <span class='skill'>Photoshop</span>
+							    <div class='bar' style='width: 80%'></div>
+							</div>
 						</td>
 					</tr>
 				</table>
-
 			</div>
         </article>
 
@@ -160,6 +159,15 @@
                 <img src='images/bittobinlogo.png' alt='Bittobin logo'/>
 			</div>
 			<div id='p2' class='grid'>
+				<h5>Face Recognition Door</h5>
+				<div class='paragraph'>
+					<p>Face recognition door is a door controlled with a Tkinter UI that unlocks with face recognition. </p>
+					<p>OpenCV LBPH Facerecognizer is used to train captured images of the new face and outputs a trained .yml file for face recognition. The names are stored in the SQLite database in key-value pairs (name and id). When a person is recognized at the door, the person's name is fetched from the database using the id of the matched face and is displayed on the UI. The Arduino will receive a signal to rotate the servo and unlock the door.</p>
+					<p><i>OpenCV, Python, Arduino, Tkinter, SQLite</i></p>
+				</div>
+				<img src='images/facerecdoor.jpg' alt='arduino servo door lock on door demo'/>
+			</div>
+			<div id='p3' class='grid'>
 				<h5>Presentation Buddy</h5>
 				<div class='paragraph'>
 					<p>Presentation Buddy is a website designed to give real-time feedback to the user's presentation. It contains a live video stream with a smile meter that fluctuates according to the user's facial expression, a timer and presentation tips that refresh every 5 seconds.</p>
@@ -168,7 +176,7 @@
 				</div>
 				<img src='images/presentation.png' alt='Presentation Buddy logo' />
 			</div>
-			<div id='p3' class='grid'>
+			<div id='p4' class='grid'>
 				<h5>NewtSnap</h5>
                 <div class='paragraph'>
                     <p>NewtSnap is a mobile web app that provides an efficient and simple way to take notes. It takes in an image (from file or camera) through HTML forms and outputs a string of text using ocrad.js that can be edited or deleted. The notes are saved using local storage so all the notes remain there until you delete them or clear your browser history. The notes can be read out loud using responsivevoice. This allows the user to listen to their notes on the go. It can also allow visually impaired users to view their notes with ease.</p>
@@ -176,15 +184,6 @@
                     <p><a href='https://devpost.com/software/newtsnap'><img src='images/devpost.png'/></a></p>
                 </div>
                 <img src='images/newtsnaplogo.png' alt='Newtsnap logo'/>
-			</div>
-			<div id='p4' class='grid'>
-				<h5>Battle Bot</h5>
-				<div class='paragraph'>
-					<p>Battle bot is a robot designed for a 3v3 battle where robots fight to bring blocks from the battle field to their own base.</p>
-					<p>Battle bot can place blocks on top using a claw and pulley system. The claw moves up and down by turning the DC motor which wounds the track. The two metal poles help guide the claw and restrict sideways motion. The robot used 3 DC motors and 1 servo motor. It was programed through Arduino and controlled using bluetooth with a mobile app.</p>
-					<p><i>Arduino</i></p>
-				</div>
-				<img src='images/battlebot2.jpg' alt='close up image of robot'/>
 			</div>
 
 		</article>
