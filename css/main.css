@@ -257,13 +257,18 @@ ol {
 	display: none;
 }
 
+.center {
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	text-align: center;
+}
+
 #toggle {
 	font-family: 'Quicksand', sans-serif;
 	background-color: transparent;
 	border: 3px solid #BBB;
 	padding: 8px 14px;
-	display: block;
-	margin: 0 auto;
 	font-size: 1.8rem;
 	color: #BBB;
 	cursor: pointer;
@@ -483,14 +488,6 @@ footer p {
 }
 
 @media screen and (min-width: 600px) {
-	#phone {
-		display: none;
-	}
-
-	#tablet {
-		display: block;
-	}
-
 	.progress {
 		width: 130px;
 	}
@@ -526,6 +523,13 @@ footer p {
 }
 
 @media screen and (min-width: 750px) {
+	#phone {
+		display: none;
+	}
+
+	#tablet {
+		display: block;
+	}
 	body {
 		font-size: 1.8rem;
 	}
