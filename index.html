@@ -29,7 +29,7 @@
 		<div class='info'>
 			<h1>Anita Hu</h1>
 			<h2 class='title'>Mechatronics Engineering @ UWaterloo</h2>
-			<p><a href='https://www.linkedin.com/in/anitahu113/'><img src='images/linkedinw.png' alt='linkedin icon'/></a><a href='https://github.com/anita-hu'><img src='images/githubw.png' alt='github icon'/></a><a href='https://devpost.com/anita-hu'><img src='images/devpostw.png' alt='devpost icon'/></a></p>
+			<p><a href='https://www.linkedin.com/in/anitahu113/'><img src='images/linkedinw.png' alt='linkedin icon'/></a><a href='https://github.com/anita-hu'><img src='images/githubw.png' alt='github icon'/></a></p>
 			<a id='next' class='bounce scrolldown' href='#about'><img src='images/expand.png' alt='learn more'/></a>
 			<div id="diamond"></div>
 		</div>
@@ -171,7 +171,7 @@
             	<p>This program enables touchless control of the mouse and keyboard keys using hand gestures. Based on the number of fingers detected, the user can switch between two modes: controlling the mouse or the keyboard. Mouse controls include controlling the mouse position, clicking, scolling, etc. allowing basic computer navigation. The keyboard controls include arrow keys and space bar allowing user to play games with gestures.</p>
 
             	<p><i>Python, OpenCV, PyAutoGUI</i></p>
-                <p><a href='https://github.com/anita-hu/HandGestureGUIControl'>Click to learn more!</a></p>
+                <p><a href='https://github.com/anita-hu/HandGestureGUIControl'>Learn more ></a></p>
             </div>
             <img src='images/handgesturedemo.gif' alt='Using hand gestures to play chrome dino game'/>
 		</div>
@@ -197,55 +197,59 @@
 					<li>The ability to read typed or hand written text.</li>
 				</ol>
             	<p><i>Python, OpenCV, Flask, Tensorflow, Google API</i></p>
-                <p><a href='https://devpost.com/software/visionai'>Click to learn more!</a></p>
+                <p><a href='https://devpost.com/software/visionai'>Learn more ></a></p>
             </div>
             <img src='images/visionailogo.png' alt='VisionAI logo'/>
 		</div>
-		<div class='grid'>
-			<h5>BitToBin</h5>
-			<div class='paragraph'>
-            	<p>BitToBin is a low-cost automatic waste sorter designed to stop waste comtamination in its tracks. Through machine learning and object recognition, BitToBin sorts and deposits waste into compost, recycling and garbage bins as each waste item is placed on the opening platform.</p>
-            	<p><i>Python, Arduino, Clarifai, OpenCV</i></p>
-                 <p><a href='https://devpost.com/software/bittobin'>Click to learn more!</a></p>
-            </div>
-            <img src='images/bittobinlogo.png' alt='Bittobin logo'/>
-		</div>
-		<div class='grid'>
-			<h5>Face Recognition Door</h5>
-			<div class='paragraph'>
-				<p>Face recognition door is a door controlled with a Tkinter UI that unlocks with face recognition. OpenCV LBPH Facerecognizer was used to train captured images of the new face and outputs a trained .yml file for face recognition. The names are stored in the SQLite database in key-value pairs (name and id). When a person is recognized at the door, the person's name is fetched from the database using the id of the matched face and is displayed on the UI. The Arduino will receive a signal to rotate the servo and unlock the door.</p>
-				<p><i>OpenCV, Python, Arduino, Tkinter, SQLite</i></p>
+		<div id='more'>
+			<div class='grid'>
+				<h5>BitToBin</h5>
+				<div class='paragraph'>
+	            	<p>BitToBin is a low-cost automatic waste sorter designed to stop waste comtamination in its tracks. Through machine learning and object recognition, BitToBin sorts and deposits waste into compost, recycling and garbage bins as each waste item is placed on the opening platform.</p>
+	            	<p><i>Python, Arduino, Clarifai, OpenCV</i></p>
+	                <p><a href='https://devpost.com/software/bittobin'>Learn more ></a></p>
+	            </div>
+	            <img src='images/bittobinlogo.png' alt='Bittobin logo'/>
 			</div>
-			<img src='images/facerecdoor.jpg' alt='arduino servo door lock on door demo'/>
-		</div>
-		<div class='grid'>
-			<h5>Presentation Buddy</h5>
-			<div class='paragraph'>
-				<p>Presentation Buddy is a website designed to give real-time feedback to the user's presentation. It contains a live video stream with a smile meter that fluctuates according to the user's facial expression, a timer and presentation tips that refresh every 5 seconds.</p>
-				<p><i>Flask, OpenCV, Python, HTML, CSS, Javascript</i></p>
-				<p><a href='https://devpost.com/software/presentationbuddy'>Click to learn more!</a></p>
+			<div class='grid'>
+				<h5>Face Recognition Door</h5>
+				<div class='paragraph'>
+					<p>Face recognition door is a door controlled with a Tkinter UI that unlocks with face recognition. OpenCV LBPH Facerecognizer was used to train captured images of the new face and outputs a trained .yml file for face recognition. The names are stored in the SQLite database in key-value pairs (name and id). When a person is recognized at the door, the person's name is fetched from the database using the id of the matched face and is displayed on the UI. The Arduino will receive a signal to rotate the servo and unlock the door.</p>
+					<p><i>OpenCV, Python, Arduino, Tkinter, SQLite</i></p>
+					<p><a href='https://github.com/anita-hu/FaceRecognitionDoor'>Learn more ></a></p>
+				</div>
+				<img src='images/facerecdoor.jpg' alt='arduino servo door lock on door demo'/>
 			</div>
-			<img src='images/presentation.png' alt='Presentation Buddy logo' />
+			<div class='grid'>
+				<h5>Presentation Buddy</h5>
+				<div class='paragraph'>
+					<p>Presentation Buddy is a website designed to give real-time feedback to the user's presentation. It contains a live video stream with a smile meter that fluctuates according to the user's facial expression, a timer and presentation tips that refresh every 5 seconds.</p>
+					<p><i>Flask, OpenCV, Python, HTML, CSS, Javascript</i></p>
+					<p><a href='https://devpost.com/software/presentationbuddy'>Learn more ></a></p>
+				</div>
+				<img src='images/presentation.png' alt='Presentation Buddy logo' />
+			</div>
+			<div class='grid'>
+				<h5>NewtSnap</h5>
+	            <div class='paragraph'>
+	                <p>NewtSnap is a mobile web app that provides an efficient and simple way to take notes. It takes in an image (from file or camera) through HTML forms and outputs a string of text using ocrad.js that can be edited or deleted. The notes are saved using local storage so all the notes remain there until you delete them or clear your browser history. The notes can be read out loud using responsivevoice. This allows the user to listen to their notes on the go. It can also allow visually impaired users to view their notes with ease.</p>
+	                <p><i>HTML, CSS, Javascript, jQuery, ocrad.js, responsivevoice.js</i></p>
+	                <p><a href='https://devpost.com/software/newtsnap'>Learn more ></a></p>
+	            </div>
+	            <img src='images/newtsnaplogo.png' alt='Newtsnap logo'/>
+			</div>
 		</div>
-		<div class='grid'>
-			<h5>NewtSnap</h5>
-            <div class='paragraph'>
-                <p>NewtSnap is a mobile web app that provides an efficient and simple way to take notes. It takes in an image (from file or camera) through HTML forms and outputs a string of text using ocrad.js that can be edited or deleted. The notes are saved using local storage so all the notes remain there until you delete them or clear your browser history. The notes can be read out loud using responsivevoice. This allows the user to listen to their notes on the go. It can also allow visually impaired users to view their notes with ease.</p>
-                <p><i>HTML, CSS, Javascript, jQuery, ocrad.js, responsivevoice.js</i></p>
-                <p><a href='https://devpost.com/software/newtsnap'>Click to learn more!</a></p>
-            </div>
-            <img src='images/newtsnaplogo.png' alt='Newtsnap logo'/>
-		</div>
-
+		<button id='toggle'>Show More</button>
 	</article>
-
     <article id='contact'>
         <h4>Contact Me</h4>
         <div class='text'>
             <h5>Thanks for stopping by!</h5>
-            <p style='margin-bottom: 30px;' id='tablet'>Feel free to contact me for more information.</p>
-            <p><a href='https://www.linkedin.com/in/anitahu113/'><img src='images/linkedin.png' alt='linkedin icon'/></a><a href='https://github.com/anita-hu'><img src='images/github.png' alt='github icon'/></a><a href='https://devpost.com/anita-hu'><img src='images/devpost.png' alt='devpost icon'/></a></p>
-			<p style='margin-bottom: 30px;' id='phone'>Feel free to contact me for more information.</p>
+            <div style='margin-bottom: 30px;' id='tablet'><p>Feel free to contact me for more information.</p>
+				<p>Shoot me an email here ></p></div>
+            <p><a href='https://www.linkedin.com/in/anitahu113/'><img src='images/linkedin.png' alt='linkedin icon'/></a><a href='https://github.com/anita-hu'><img src='images/github.png' alt='github icon'/></a></p>
+			<div style='margin-bottom: 30px;' id='phone'><p>Feel free to contact me for more information.</p>
+				<p>Shoot me an email here:</p></div>
         </div>
         <div class='forms'>
             <form action='mail.php' name='contact' method='post'>

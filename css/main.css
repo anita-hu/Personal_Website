@@ -253,6 +253,28 @@ ol {
 	margin-bottom: 10px;
 }
 
+#more {
+	display: none;
+}
+
+#toggle {
+	font-family: 'Quicksand', sans-serif;
+	background-color: transparent;
+	border: 3px solid #BBB;
+	padding: 8px 14px;
+	display: block;
+	margin: 0 auto;
+	font-size: 1.8rem;
+	color: #BBB;
+	cursor: pointer;
+	transition: 0.4s;
+}
+
+#toggle:hover {
+	border: 3px solid #8ee1ff;
+	color: #8ee1ff;
+}
+
 .div1 {
 	background-color: #444;
 	clip-path: polygon(
@@ -294,13 +316,12 @@ ol {
 }
 
 .grid {
-	margin-bottom: 20px;
+	margin-bottom: 25px;
 }
 
 .grid img {
 	width: 100%;
 }
-
 
 a img {
 	height: 50px;
@@ -383,11 +404,13 @@ input[type=submit] {
 	background-color: transparent;
 	border: 3px solid #BBB;
 	padding: 8px 14px;
+	transition: 0.4s;
+	cursor: pointer;
 }
 
 input[type=submit]:hover {
-	color: #0FF;
-	border: 3px solid #0FF;
+	color: #8ee1ff;
+	border: 3px solid #8ee1ff;
 }
 
 input[type=reset] {
@@ -396,6 +419,8 @@ input[type=reset] {
 	background-color: transparent;
 	border: 3px solid #BBB;
 	padding: 8px 14px;
+	transition: 0.4s;
+	cursor: pointer;
 }
 
 input[type=reset]:hover {
