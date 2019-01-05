@@ -1,3 +1,9 @@
+// loading images
+$(window).on('load', function(){
+    $('#loading').hide();
+    $('#content').show();
+});
+
 // smooth nav scrolling
 $(document).on('click', 'a[href^="#"]', function (event) {
     event.preventDefault();
@@ -6,7 +12,7 @@ $(document).on('click', 'a[href^="#"]', function (event) {
         scrollTop: $($.attr(this, 'href')).offset().top - 50
     }, 500);
 });
-
+// toggle show and hide
 $(document).ready(function(){
   $("#toggle").click(function(){
     $("#more").slideToggle();
