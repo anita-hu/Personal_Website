@@ -94,39 +94,6 @@ i {
 	display: none;
 }
 
-#nav {
-	top: 0;
-	position: fixed;
-	width: 100%;
-	display: block;
-	background-color: #19beff;
-	z-index: 999;
-	text-align: left;
-	overflow-x: hidden;
-}
-
-#nav ul li {
-	display: inline-block;
-	background-color: transparent;
-	padding: 11px 6px;
-	transition: border .15s ease-in-out;
-	text-align: center;
-}
-
-#nav a {
-	transition: border .15s ease-in-out;
-}
-
-#nav a:link, #nav a:visited {
-	color: #FFF;
-	text-decoration: none;
-}
-
-#nav a:hover, #nav a:active {
-	padding-bottom: 12px;
-	border-bottom: solid 3px #FFF;
-}
-
 .intro {
 	background: #19beff;
 	height: 100vh;
@@ -159,6 +126,15 @@ i {
 	opacity: 1;
 }
 
+ul li {
+	margin-left: 25px;
+	list-style-type: square;
+}
+
+#exp ul {
+	padding-bottom: 30px;
+}
+
 #diamond {
 	position: relative;
 	height: 90vw;
@@ -172,7 +148,7 @@ i {
 #next {
 	display: block;
 	position: absolute;
-	margin-top: 35vh;
+	bottom: 22px;
 }
 
 .bounce {
@@ -234,13 +210,13 @@ article {
 	z-index: 1;
 }
 
-p a:link, p a:visited {
+a:link, a:visited {
 	text-decoration: none;
 	color: #7FDBFF;
 	font-weight: bold;
 }
 
-p a:hover, p a:active {
+a:hover, a:active {
 	color: #19beff;
 	transition: ease-in-out .2s;
 }
@@ -257,28 +233,12 @@ p a:hover, p a:active {
 	line-height:100%;
 }
 
-#skills td:first-child {
-	padding-right: 20px;
-}
-
-.progress {
-	width: 120px;
-	border-radius: 25px;
-	background-color: #333;
-	position: relative;
-	margin: 10px 0px;
-}
-
 .skill {
-	position: absolute;
-	top: 16%;
-	left: 10%;
-}
-
-.bar {
-	height: 27px;
-	border-radius: 25px 0px 0px 25px;
+	display: inline-block;
+	padding: 5px 8px;
+	border-radius: 10px;
 	background-color: #1AE;
+	margin-bottom: 4px;
 }
 
 ol {
@@ -312,6 +272,72 @@ ol {
 #toggle:hover {
 	border: 3px solid #8ee1ff;
 	color: #8ee1ff;
+}
+
+#nav {
+	display: none;
+}
+
+#dropdown {
+	top: 0;
+	position: fixed;
+	width: 100%;
+	display: block;
+	z-index: 999;
+}
+
+.toggle-dropdown,[id^=drop] {
+	display: none;
+}
+
+.toggle-dropdown + a, .menu {
+	display: none;
+}
+
+.toggle-dropdown {
+	display: block;
+	background-color: #19beff;
+	padding: 10px 20px 40px 20px;
+	width: 100%;
+	color: #FFF;
+	transition: background-color .2s ease-in-out;
+}
+
+.toggle-dropdown img {
+	float: left;
+	margin-top: 3px;
+	width: 30px;
+}
+
+[id^=drop]:checked + ul {
+	display: block;
+	width: 100%;
+}
+
+#dropdown ul li {
+	display: block;
+	margin: 0;
+	background-color: #333;
+	padding: 14px 20px;
+	width: 100%;
+	transition: background-color .2s ease-in-out;
+}
+
+#dropdown ul li:hover {
+	background-color: #000;
+}
+
+#dropdown a {
+	transition: color .2s ease-in-out;
+}
+
+#dropdown a:link, #dropdown a:visited {
+	color: #DDD;
+	text-decoration: none;
+}
+
+#dropdown a:hover, #dropdown a:active {
+	color: #FFF;
 }
 
 .div1 {
@@ -411,13 +437,13 @@ input, textarea, select {
 
 input[type=text] {
 	padding: 5px;
-	width: 95%;
+	width: 100%;
 	border: solid 2px #777;
 }
 
 input[type=email] {
 	padding: 5px;
-	width: 95%;
+	width: 100%;
 	border: solid 2px #777;
 }
 
@@ -431,7 +457,7 @@ select {
 
 textarea{
 	padding: 5px;
-	width: 95%;
+	width: 100%;
 	resize: vertical;
 	height: 150px;
 	border: solid 2px #777;
@@ -479,14 +505,6 @@ footer p {
 }
 
 @media screen and (min-width: 350px) {
-	#nav {
-		text-align: right;
-	}
-
-	#nav ul li {
-		padding: 11px 10px;
-	}
-
 	input[type=submit] {
 		color: #BBB;
 		margin: 15px 25px 0px 15px;
@@ -500,10 +518,6 @@ footer p {
 @media screen and (min-width: 430px) {
 	#skills td:first-child {
 		padding-right: 60px;
-	}
-
-	#nav ul li {
-		padding: 11px 20px;
 	}
 
 	input[type=submit] {
@@ -522,6 +536,43 @@ footer p {
 }
 
 @media screen and (min-width: 600px) {
+	#dropdown {
+		display: none;
+	}
+
+	#nav {
+		top: 0;
+		position: fixed;
+		width: 100%;
+		display: block;
+		background-color: #19beff;
+		z-index: 999;
+		text-align: left;
+		overflow-x: hidden;
+	}
+
+	#nav ul li {
+		display: inline-block;
+		background-color: transparent;
+		padding: 11px 6px;
+		transition: border .15s ease-in-out;
+		text-align: center;
+	}
+
+	#nav a {
+		transition: border .15s ease-in-out;
+	}
+
+	#nav a:link, #nav a:visited {
+		color: #FFF;
+		text-decoration: none;
+	}
+
+	#nav a:hover, #nav a:active {
+		padding-bottom: 12px;
+		border-bottom: solid 3px #FFF;
+	}
+
 	.progress {
 		width: 130px;
 	}
@@ -636,7 +687,7 @@ footer p {
 	}
 
 	h5 {
-		font-size: 2.3rem;
+		font-size: 2.25rem;
 	}
 
 	#about {

@@ -21,6 +21,17 @@
 		<div class='loader center'></div>
 	</div>
 	<div id='content'>
+		<div id='dropdown'>
+   		<label for='drop' class='toggle-dropdown'><img src='images/dropdown.png' alt='menu icon'/></label>
+        <input type='checkbox' id='drop' />
+            <ul class='menu'>
+                <li><a href='#about'>About</a></li>
+                <li><a href='#exp'>Experience</a></li>
+                <li><a href='#project'>Projects</a></li>
+                <li><a href='#contact'>Contact</a></li>
+            </ul>
+    	</div>
+
 		<div id='nav'>
 	        <ul>
 	            <li><a href='#about'>About</a></li>
@@ -40,132 +51,87 @@
 		</div>
 	    <article class='div1' id='about'>
 	        <h3 class='left'>About</h3>
-	        <p>Hi, nice to meet you! My name is Anita Hu. I am a first year Mechatronics Engineering student at the University of Waterloo. I love exploring and learning new things! Through my involvement in WATonomous, a student design team at the forefront in the design and creation of autonomous self-driving vehicles, I have developed deep interest in autonomation and computer vision along with deep learning. I enjoy taking part in hackathons, where I can learn new skills and brainstorm innovative ideas in a team setting. Take a look at my <a href='#project'>projects</a> here!</p>
+	        <p>Hi, nice to meet you! My name is Anita Hu. I am a second year Mechatronics Engineering student at the University of Waterloo. I love exploring and learning new things! During my first internship, I achieved outstanding performance as a <a href='#exp'>computer vision developer</a> at Miovision where I dived into object detection neural networks and pattern recognition with K means and Gaussian mixture model. Through my involvement in <a href='https://watonomous.ca'>WATonomous</a>, a student design team at the forefront in the design and creation of autonomous self-driving vehicles, I have developed deep interest in perception and hands-on experience with ROS, computer vision, and deep learning. I enjoy taking part in hackathons, where I can learn new skills and brainstorm innovative ideas in a team setting. Take a look at my <a href='#project'>projects</a> here!</p>
 	        <p>I am always up for a challenge and looking forward to my next internship opportunity! Feel free to check out my <a href='resume.pdf'>resume</a> and <a href='#contact'>contact me</a> and say hi!</p>
 			<h4 class='left'>Skills</h4>
 			<div id='skills'>
 				<div id='skills'>
-				<table>
-					<tr>
-						<td>
-							<h5>Languages</h5>
-						</td>
-						<td>
-							<h5>Technologies</h5>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<div class='progress'>
-							    <span class='skill'>Python</span>
-							    <div class='bar' style='width: 80%'></div>
-							</div>
-						</td>
-						<td>
-							<div class='progress'>
-							    <span class='skill'>OpenCV</span>
-							    <div class='bar' style='width: 55%'></div>
-							</div>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<div class='progress'>
-							    <span class='skill'>C/C++</span>
-							    <div class='bar' style='width: 75%'></div>
-							</div>
-						</td>
-						<td>
-							<div class='progress'>
-							    <span class='skill'>Git</span>
-							    <div class='bar' style='width: 60%'></div>
-							</div>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<div class='progress'>
-							    <span class='skill'>HTML</span>
-							    <div class='bar' style='width: 100%; border-radius: 25px;'></div>
-							</div>
-						</td>
-						<td>
-							<div class='progress'>
-							    <span class='skill'>AutoCAD</span>
-							    <div class='bar' style='width: 70%'></div>
-							</div>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<div class='progress'>
-							    <span class='skill'>CSS</span>
-							    <div class='bar' style='width: 90%'></div>
-							</div>
-						</td>
-						<td>
-							<div class='progress'>
-							    <span class='skill'>SolidWorks</span>
-							    <div class='bar' style='width: 70%'></div>
-							</div>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<div class='progress'>
-							    <span class='skill'>JavaScript</span>
-							    <div class='bar' style='width: 55%'></div>
-							</div>
-						</td>
-						<td>
-							<div class='progress'>
-							    <span class='skill'>Illustrator</span>
-							    <div class='bar' style='width: 90%'></div>
-							</div>
-						</td>
-					</tr>
-				</table>
+				<h5>Languages</h5>
+				<div class='skill'>Python</div>
+				<div class='skill'>C++</div>
+				<div class='skill'>Bash</div>
+				<div class='skill'>HTML</div>
+				<div class='skill'>CSS</div>
+				<div class='skill'>Javascript</div>
+
+				<h5 style='margin-top: 20px;'>Frameworks</h5>
+				<div class='skill'>OpenCV</div>
+				<div class='skill'>Tensorflow</div>
+				<div class='skill'>Keras</div>
+				<div class='skill'>Scikit-Learn</div>
+				<div class='skill'>Numpy</div>
+				<div class='skill'>Matplotlib</div>
+				<div class='skill'>Git</div>
+				<div class='skill'>ROS</div>
+
+				<h5 style='margin-top: 20px;'>Tools</h5>
+				<div class='skill'>AutoCAD</div>
+				<div class='skill'>SolidWorks</div>
+				<div class='skill'>Illustrator</div>
+				<div class='skill'>Photoshop</div>
 			</div>
 	    </article>
 
 	    <article class='div2' id='exp'>
 	        <h4>Experience</h4>
 	        <div style='grid-column: 2/3; margin-bottom: 15px;'>
-				<!-- <h5>Subteam Lead</h5>
+				<h5>Computer Vision Developer</h5>
+	            <p style='margin-bottom: 10px;'><i>Miovision</i></p>
+	            <ul>
+					<li>Automated turning-movement-count template generation from vehicle tracks using Kmeans clustering, Gaussian mixture models, and least-squares optimization.</li>
+					<li>Rearchitected layers of YoloV3, as the first proof-of-concept for future Tensorflow models, to be compatible with Miovision's existing SSD framework.</li>
+					<li>Significant customer impact with over 50% error reduction through continuous-iterative SSD model training.</li>
+					<li>Reduced development iteration time through stochastic gradient descent with restarts that resulted in 100k fewer training iterations.</li>
+				</ul>
+
+				<h5>Perception Manager</h5>
 	            <p style='margin-bottom: 10px;'><i>WATonomous</i></p>
-	            <p></p> -->
+	            <ul>
+					<li>Responsible for assignment and prioritization of OKRs, cross-team integration, and in-car operation of the software pipeline and sensors.</li>
+					<li>Integrated YOLO Darknet models in ROS with OpenVINO.</li>
+					<li>Trained semantic segmentation model for road and road line detection.</li>
+					<li>Trained YOLOv3 model for pedestrian, cyclist and vehicle detection.</li>
+				</ul>
 
-				<h5>Core Member</h5>
+				<div id='more'>
+
+				<h5>Object Classification Subteam Lead</h5>
 	            <p style='margin-bottom: 10px;'><i>WATonomous</i></p>
-	            <p>I generated synthetic scene images containing traffic lights using the <a href='http://openaccess.thecvf.com/content_ICCV_2017/papers/Dwibedi_Cut_Paste_and_ICCV_2017_paper.pdf'> Cut, Paste and Learn</a> method. I trained Tensor􏰀flow object detection models to classify 4 different types of traffi􏰁c lights and determined traf􏰁fic light state using OpenCV image processing functions.</p>
+	            <ul>
+					<li>Trained SSD MobileNet model in Tensorflow to detect 15 traffic sign classes with 0.95 mAP.</li>
+					<li>Developed ROS nodes for traffic light, traffic sign and obstacle detection that subscribes to camera frames and publishes detection messages.</li>
+					<li>Integrated Tensorflow models in ROS with OpenVINO.</li>
+				</ul>
 
-	            <h5>Camp Counsellor</h5>
-	            <p style='margin-bottom: 10px;'><i>Town of Newmarket</i></p>
-	            <p>I planned and led educational, social, and athletic activities for children. I supervised all activities and swimming sections and provided first-aid when needed.</p>
-
-	            <h5>Peer Tutoring</h5>
-	            <p style='margin-bottom: 10px;'><i>Sacred Heart C.H.S.</i></p>
-	            <p>I tutored students from Grades 9 to 12 in Science and Math courses. I assisted students with homework, projects and test preparation. I provided better understanding of concepts by showing the reason and logic behind them.</p>
+				<h5>Perception Core Member</h5>
+	            <p style='margin-bottom: 10px;'><i>WATonomous</i></p>
+				<ul>
+					<li>Generated synthetic scene images containing traffic lights using <a href='http://openaccess.thecvf.com/content_ICCV_2017/papers/Dwibedi_Cut_Paste_and_ICCV_2017_paper.pdf'>Cut, Paste and Learn</a> method.</li>
+					<li>Trained TensorFlow object detection model to detect and classify different types of traffic lights.</li>
+					<li>Used OpenCV to develop a traffic light state detection algorithm that is robust for all traffic light shapes.</li>
+				</ul>
+			</div>
+			<button id='toggle' class='center' style='margin-bottom: 30px;'>Show More</button>
 	        </div>
 	        <h4>Awards</h4>
-	        <table>
-				<tr>
-					<td>Best Use of Learning in Hack</td>
-					<td>Category Prize out of 400</td>
-				</tr>
-				<tr>
-					<td></td>
-					<td>Awarded for VisionAI project at Hack the 6ix 2018.</td>
-				</tr>
-	            <tr>
-	                <td>Hack the North Finalist</td>
-	                <td>Top 14 out of 1000</td>
-	            </tr>
-	            <tr>
-	            	<td></td>
-	                <td>Awarded for BitToBin project at Hack the North 2017.</td>
-	            </tr>
-	        </table>
+			<div style='grid-column: 2/3; margin-bottom: 15px;'>
+				<h5>Best Use of Learning in Hack</h5>
+				<p>Category Prize out of 400 participants.<br />Awarded for <a href='#project'>VisionAI</a> project at Hack the 6ix 2018.</p>
+
+				<h5>Hack the North Finalist</h5>
+				<p>Top 14 out of 1000 participants.<br />Awarded for <a href='#project'>BitToBin</a> project at Hack the North 2017.</p>
+			</div>
+
 	    </article>
 		<article class='div3' id='project'>
 			<h4>Projects</h4>
@@ -175,7 +141,7 @@
 	            	<p>This program enables touchless control of the mouse and keyboard keys using hand gestures. Based on the number of fingers detected, the user can switch between two modes: controlling the mouse or the keyboard. Mouse controls include controlling the mouse position, clicking, scolling, etc. allowing basic computer navigation. The keyboard controls include arrow keys and space bar allowing user to play games with gestures.</p>
 
 	            	<p><i>Python, OpenCV, PyAutoGUI</i></p>
-	                <p><a href='https://github.com/anita-hu/HandGestureGUIControl'>Learn more ></a></p>
+	                <p><a href='https://github.com/anita-hu/HandGestureGUIControl'>Learn more..</a></p>
 	            </div>
 	            <img src='images/handgesturedemo.gif' alt='Using hand gestures to play chrome dino game'/>
 			</div>
@@ -201,7 +167,7 @@
 						<li>The ability to read typed or hand written text.</li>
 					</ol>
 	            	<p><i>Python, OpenCV, Flask, Tensorflow, Google API</i></p>
-	                <p><a href='https://devpost.com/software/visionai'>Learn more ></a></p>
+	                <p><a href='https://devpost.com/software/visionai'>Learn more..</a></p>
 	            </div>
 	            <img src='images/visionailogo.png' alt='VisionAI logo'/>
 			</div>
@@ -211,7 +177,7 @@
 					<div class='paragraph'>
 		            	<p>BitToBin is a low-cost automatic waste sorter designed to stop waste comtamination in its tracks. Through machine learning and object recognition, BitToBin sorts and deposits waste into compost, recycling and garbage bins as each waste item is placed on the opening platform.</p>
 		            	<p><i>Python, Arduino, Clarifai, OpenCV</i></p>
-		                <p><a href='https://devpost.com/software/bittobin'>Learn more ></a></p>
+		                <p><a href='https://devpost.com/software/bittobin'>Learn more..</a></p>
 		            </div>
 		            <img src='images/bittobinlogo.png' alt='Bittobin logo'/>
 				</div>
@@ -220,7 +186,7 @@
 					<div class='paragraph'>
 						<p>Face recognition door is a door controlled with a Tkinter UI that unlocks with face recognition. OpenCV LBPH Facerecognizer was used to train captured images of the new face and outputs a trained .yml file for face recognition. The names are stored in the SQLite database in key-value pairs (name and id). When a person is recognized at the door, the person's name is fetched from the database using the id of the matched face and is displayed on the UI. The Arduino will receive a signal to rotate the servo and unlock the door.</p>
 						<p><i>OpenCV, Python, Arduino, Tkinter, SQLite</i></p>
-						<p><a href='https://github.com/anita-hu/FaceRecognitionDoor'>Learn more ></a></p>
+						<p><a href='https://github.com/anita-hu/FaceRecognitionDoor'>Learn more..</a></p>
 					</div>
 					<img src='images/facerecdoor.jpg' alt='arduino servo door lock on door demo'/>
 				</div>
@@ -229,7 +195,7 @@
 					<div class='paragraph'>
 						<p>Presentation Buddy is a website designed to give real-time feedback to the user's presentation. It contains a live video stream with a smile meter that fluctuates according to the user's facial expression, a timer and presentation tips that refresh every 5 seconds.</p>
 						<p><i>Flask, OpenCV, Python, HTML, CSS, Javascript</i></p>
-						<p><a href='https://devpost.com/software/presentationbuddy'>Learn more ></a></p>
+						<p><a href='https://devpost.com/software/presentationbuddy'>Learn more..</a></p>
 					</div>
 					<img src='images/presentation.png' alt='Presentation Buddy logo' />
 				</div>
@@ -238,7 +204,7 @@
 		            <div class='paragraph'>
 		                <p>NewtSnap is a mobile web app that provides an efficient and simple way to take notes. It takes in an image (from file or camera) through HTML forms and outputs a string of text using ocrad.js that can be edited or deleted. The notes are saved using local storage so all the notes remain there until you delete them or clear your browser history. The notes can be read out loud using responsivevoice. This allows the user to listen to their notes on the go. It can also allow visually impaired users to view their notes with ease.</p>
 		                <p><i>HTML, CSS, Javascript, jQuery, ocrad.js, responsivevoice.js</i></p>
-		                <p><a href='https://devpost.com/software/newtsnap'>Learn more ></a></p>
+		                <p><a href='https://devpost.com/software/newtsnap'>Learn more..</a></p>
 		            </div>
 		            <img src='images/newtsnaplogo.png' alt='Newtsnap logo'/>
 				</div>
@@ -249,12 +215,11 @@
 	        <h4>Contact Me</h4>
 	        <div class='text'>
 	            <h5>Thanks for stopping by!</h5>
-				<p style='margin-bottom: 20px;'>Feel free to contact me for more information.</p>
 
 	            <p><a href='https://www.linkedin.com/in/anitahu113/'><img src='images/linkedin.png' alt='linkedin icon'/></a><a href='https://github.com/anita-hu'><img src='images/github.png' alt='github icon'/></a></p>
 
-				<div style='margin-bottom: 20px;' id='tablet'><p>Shoot me an email here ></p></div>
-				<div style='margin-bottom: 20px;' id='phone'><p>Shoot me an email here:</p></div>
+				<p style='margin-bottom: 20px;'>Feel free to contact me for more information.</p>
+
 	        </div>
 	        <div class='forms'>
 	            <form action='mail.php' name='contact' method='post'>
