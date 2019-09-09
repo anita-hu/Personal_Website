@@ -547,19 +547,20 @@ footer p {
 		display: block;
 		background-color: #19beff;
 		z-index: 999;
-		text-align: left;
+		text-align: right;
 		overflow-x: hidden;
 	}
 
 	#nav ul li {
 		display: inline-block;
 		background-color: transparent;
-		padding: 11px 6px;
+		padding: 11px 16px 11px 6px;
 		transition: border .15s ease-in-out;
 		text-align: center;
 	}
 
 	#nav a {
+		font-weight: normal;
 		transition: border .15s ease-in-out;
 	}
 
