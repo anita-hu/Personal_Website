@@ -247,7 +247,7 @@ ol {
 	margin-bottom: 10px;
 }
 
-#more {
+#more-exp, #more-proj {
 	display: none;
 }
 
@@ -258,7 +258,7 @@ ol {
 	text-align: center;
 }
 
-#toggle {
+#toggle-exp, #toggle-proj {
 	font-family: 'Quicksand', sans-serif;
 	background-color: transparent;
 	border: 3px solid #BBB;
@@ -269,7 +269,7 @@ ol {
 	transition: 0.4s;
 }
 
-#toggle:hover {
+#toggle-exp:hover, #toggle-proj:hover {
 	border: 3px solid #8ee1ff;
 	color: #8ee1ff;
 }
