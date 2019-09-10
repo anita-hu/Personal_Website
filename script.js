@@ -13,7 +13,7 @@ $(function () {
     $("#change-text").fadeOut(400, function () {
       $(this).text(messageArray[count % messageArray.length]).fadeIn(400);
     });
-}, 2500);
+}, 3000);
 });
 
 // smooth nav scrolling
