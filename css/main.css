@@ -328,6 +328,7 @@ ol {
 }
 
 #dropdown a {
+	font-weight: normal;
 	transition: color .2s ease-in-out;
 }
 
